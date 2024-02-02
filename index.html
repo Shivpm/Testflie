@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="game-header">
+                <div class="title">
+                    <p>ROCK</p>
+                    <p>PAPER</p>
+                    <p>SCISSORS</p>
+                </div>
+                <div class="score">
+                    <div class="score_card">
+                        <p class="name">YOUR SCORE</p>
+                        <p class="yourscore">0</p>
+                    </div>
+                    <div class="score_card">
+                        <p class="name"> COMPUTER SCORE</p>
+                        <p class="compscore">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="diagram">
+            <div class="top">
+                <div class="rock cardimage" data-value="Rock"><img src="rock.png" alt="Rock"></div>
+                <div class="line"></div>
+                <div class="scissor cardimage" data-value="Scissor" ><img src="Scissor.png" alt="Scissor"></div>
+            </div>
+            <div class="middle">
+                <div class="tilt1 line"></div>
+                <div class="tilt2 line"></div>
+            </div>
+            <div class="lower">
+                <div class="paper cardimage" data-value="Paper" ><img src="paper.png" alt="Paper"></div>
+            </div>
+        </div>
+        <div class="result_container">
+            <div class="result_box">
+                <div class="selected_item you"><p>YOU PICKED</p>
+                            <div class="card" id="user"><img src alt="You PICKED Image"></div>
+                            <div id="userindicator" class="winnerindicator">
+                                <div class="circle outer" style="--i: 1"></div>
+                                <div class="circle inner" style="--i: 2"></div>
+                                <div class="circle innermost" style="--i: 3"></div>
+                            </div>
+                </div>
+                <div class="message"> <p class="win">YOU WIN</p>  <p class="against">AGAINST PC</p>
+                <button class="playagain">PLAY AGAIN</button>
+                </div>
+                <div class="selected_item pc"><p>PC PICKED</p>
+                    <div class="card" id="pc"><img src alt="PC PICKED Image"></div>
+                    <div id="pcindicator" class="winnerindicator">
+                        <div class="circle outer" style="--i: 1"></div>
+                        <div class="circle inner" style="--i: 2"></div>
+                        <div class="circle innermost" style="--i: 3"></div>
+                    </div>
+        </div>
+            </div>
+        </div>
+    </div>
+        
+            <div class="rule_box">
+                <div class="head">
+                    <p>Game Rules</p>
+                </div>
+                <div class="cross"><img src="X.png" alt=""></div>
+                <div class="content">
+                    <ul>
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <br>
+                        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                            paper, scissors.”</li>
+                            <br>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                        <br>
+                        <li>If both players lay down the same hand, each player lays down another hand</li>
+                    </ul>
+
+                </div>
+            </div>
+        <div class="bottom_btn">
+            <button class="rules btn">RULES</button>
+            <a href="Hurray.html" class="next btn">NEXT</a>
+        </div>
+    </div>
+    <script src="test.js"> </script>
+</body>
+
+</html>

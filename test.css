@@ -1,0 +1,458 @@
+*{
+    margin: 0px;
+    
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(118, 196, 0);
+    padding-top: 40px;
+}
+.header{
+ max-width: 840px;
+ margin: 0px auto;
+    }
+.game-header{
+    display: flex;
+    width: 800px;
+    height: 158px;
+    border: 2px solid #fff;
+    border-radius: 13px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.title{
+    font-family: Roboto;
+font-size: 40px;
+font-weight: 600;
+line-height: 47px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #ffffff;
+}
+.score_card{
+    background-color: #ffffff;
+    border-radius: 9px;
+    width: 125px;
+    height: 128px;
+    text-align: center;
+    padding: 16px;
+}
+.score{
+    display: flex;
+   justify-content: space-between;
+   gap: 25px;
+}
+.name{
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.1em;
+
+color:  #656565;
+
+}
+.yourscore ,.compscore{
+    font-family: Roboto;
+font-size: 68px;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.container{
+    max-width: 840px;
+}
+.diagram{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+}
+
+.top{
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+.rock{
+    display: flex;
+    border: 16px solid #0074B6;
+    border-radius: 50%;
+    width: 8.75rem;
+    height: 8.75rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.line{
+    width: 10rem;
+    height: 1.25rem;
+    background-color: #000000A3;
+    position: absolute;
+    z-index: 0;
+}
+.scissor{
+    border: 16px solid #BD00FF;
+    border-radius: 50%;
+    width: 8.75rem;
+    height: 8.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.tilt1{
+   width: 15rem;
+    transform: rotate(60deg);
+    position: relative;
+    
+}
+.tilt2{
+width: 15rem;
+    transform: rotate(-60deg);
+    position: relative;
+}
+.middle{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    justify-content: space-between;
+ 
+}
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top:5rem ;
+}
+.paper{
+    display: flex;
+    border: 16px solid #FFA943;
+    border-radius: 50%;
+    width: 8.75rem;
+    height: 8.75rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1;
+}
+@media screen and (max-width : 835px) {
+.header {
+    max-width: 90%;
+    margin: 0 10px;
+}
+.main{
+    width: 100%;
+}
+.game-header{
+    width: 100%;
+}
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding-top: 14px;
+    width: 100%;
+}
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+.score_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.score_card p:first-child {
+    color: #656565;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+.score_card p:last-child {
+    color: #252525;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.container{
+    max-width: 100%;
+}
+.top{
+    gap: 2rem;
+}
+.lower{
+    padding-top: 2rem;
+}
+.cardimage{
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scissor{
+    border: 8px solid #bd00ff;
+}
+.rock{
+    border: 8px solid #bd00ff;
+}
+.paper{
+    border: 8px solid #ffa943;
+}
+.line{
+    width: 8rem;
+    height: 1.25rem;
+}
+.tilt1, .tilt2{
+    width: 5rem;
+    height: 1.25rem ;
+}
+}
+
+
+
+.rule_box{
+    width: 278px;
+    height: 325px;
+    border-radius: 13px;
+    border: 7px solid #ffffff;
+    background-color: #004429;
+    color: #ffffff;
+    position: absolute;
+    right: 2rem;
+    margin-top: 4rem;
+    bottom: 70px;
+}
+.head{
+    font-family: Roboto;
+font-size: 29px;
+font-weight: 500;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: center;
+padding-top: 1rem;
+}
+.cross{
+    background-color: #FF0000;
+    border: 5px solid #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: -2rem;
+    top: -2.5rem;
+}
+.content{
+    font-family: Roboto;
+font-size: 0.9rem;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+padding-bottom: 1rem;
+padding-right: 1rem;
+padding-top: 1rem;
+
+}
+ul{
+    list-style: square;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+li::marker {
+    color: #FFD600;
+    font-size: 1.5rem;
+}
+.bottom_btn{
+    display: flex;
+    padding: 1rem;
+    padding-right: 2rem;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    gap: 2rem;
+}
+.btn{
+    background-color: rgb(118, 196, 0);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-family: Roboto;
+font-size: 21px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: 0.1em;
+color: #ffffff;
+padding: 0.6rem;
+padding-inline: 1.5rem;
+
+}
+.next {
+    text-decoration: none;
+    display: none;
+
+}
+.result_container{
+    display: none;
+}
+.result_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 4rem;
+}
+.selected_item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #ffffff;
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+
+}
+.card{
+    display: flex;
+    border-radius: 50%;
+    width: 8.75rem;
+    height: 8.75rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    
+
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    }
+    .win{
+        font-family: Roboto;
+font-size: 39px;
+font-weight: 800;
+line-height: 46px;
+letter-spacing: 0.1em;
+text-align: center;
+
+    }
+    .against{
+        font-family: Roboto;
+font-size: 25px;
+font-weight: 800;
+line-height: 29px;
+letter-spacing: 0.1em;
+text-align: center;
+
+    }
+    .playagain{
+        width: 174px;
+height: 44px;
+background-color: #ffffff;
+border-radius: 9px;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0.1em;
+color: #6B6B6B;
+  }
+  .winnerindicator {
+    display: none;
+    position: absolute;
+    top: -20%;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-color: transparent;
+    z-index: -1;
+}
+.circle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.outer {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(29, 168, 43, 0.5);
+}
+.inner {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(29, 168, 43, 0.79);
+}
+.innermost {
+    width: 250px;
+    height: 250px;
+    background-color: #0d520d;
+    z-index: -1;
+}
+#userindicator, #pcindicator {
+    animation: animate 1.5s linear infinite;
+    animation-delay: calc(1.5s * var(--i)) linear infinite;
+}
+@keyframes animate{
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    
+    50% {
+        transform: scale(0.75);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
